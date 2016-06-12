@@ -15,7 +15,7 @@ function utctime()
   return os.time(os.date("!*t"))
 end
 
--- Use the geocoding api to get the lattitude and longitude with accuracy specifier
+-- Use the geocoding api to get the latitude and longitude with accuracy specifier
 -- CHECKME: this seems to work without a key??
 function get_latlong(area)
   local api      = base_api .. "/geocode/json?"

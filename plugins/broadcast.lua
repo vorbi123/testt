@@ -5,7 +5,7 @@ local function returnids(cb_extra, success, result)
    for k,v in pairs(result.members) do
       send_large_msg(v.print_name, text)
    end
-   send_large_msg(receiver, 'Message broadcasted succesfully')
+   send_large_msg(receiver, 'Message broadcasted successfully')
 end
 
 local function run(msg, matches)
