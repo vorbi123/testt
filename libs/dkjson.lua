@@ -11,7 +11,7 @@ David Kolf's JSON module for Lua 5.1/5.2
 In the default configuration this module writes no global values, not even
 the module table. Import it using
     json = require ("dkjson")
-In environments where `require` or a similiar function are not available
+In environments where `require` or a similar function are not available
 and you cannot receive the return value of the module, you can set the
 option `register_global_module_table` to `true`.  The module table will
 then be saved in the global variable with the name given by the option

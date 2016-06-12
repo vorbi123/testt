@@ -38,8 +38,8 @@ local function parseData(data)
    local jsonBody = json:decode(data)
    local response = ""
    print(data)
-   if jsonBody["Error Occured"] ~= nil then
-      response = response .. jsonBody["Error Occured"]
+   if jsonBody["Error Occurred"] ~= nil then
+      response = response .. jsonBody["Error Occurred"]
    elseif jsonBody["Is Porn"] == nil or jsonBody["Reason"] == nil then
       response = response .. "I don't know if that has adult content or not."
    else
